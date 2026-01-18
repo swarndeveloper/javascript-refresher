@@ -49,3 +49,17 @@ const myFullNameDetailsFamily = myFamily.map((item) =>
     : { firstName: item, lastname: "Ghosh" }
 );
 console.log(myFullNameDetailsFamily);
+
+const myTeam = [
+  { name: "Swarnendu", surname: "Ghosh" },
+  { name: "Sohan", surname: "Ghosh" },
+  { name: "Anasua", surname: "Chatterjee" },
+];
+
+const [mySelf, mySon, myWife] = myTeam;
+console.log("My Self -> " + mySelf.name);
+console.log("My Son -> " + mySon.name);
+console.log("My Wife -> " + myWife.name);
+
+const { name: userName, surname: secondName } = myTeam[0];
+console.log("My Name " + userName + ". My secondName " + secondName);
